@@ -40,50 +40,11 @@
         </div>
 
         <ul class="tabs">
-            <li class="active"><a class="tag" href="#about-me">About Me</a></li>
-            <li><a class="tag" href="#resume">Resume</a></li>
+            <li><a href="index.html">About Me</a></li>
+            <li class="active"><a class="tag" href="#resume">Resume</a></li>
         </ul>
 
-        <article class="markdown-body tab" id="about-me">
-
-          <h2>About Me</h2>
-          <p>I build meaningful solutions.</p>
-
-          <img src="images/tyler_at_minnehaha.jpg">
-
-          <p>I live in Minneapolis, MN. I left my job assessing noise/chemical exposures in November of 2012 and taught myself Android. I realized I need and want to work on a team, so I signed up for <a href="http://devbootcamp.com/learn-more/">Dev Bootcamp</a>. I am now equipped to contribute as a full-stack web or Android developer.</p>
-
-          <h3>Build Things</h3>
-
-          <p>As a kid, I once built a very tall car from K'nex. Being tall is cool, but the height also served a purpose: potential energy. I couldn't have defined the term at the time, but I knew I could put a heavy object up high, turn the string it was hanging on around with a pulley, and wrap it around an axle.  The vehicle moved on its own. Giving behavior to inanimate objects is <em>Fun</em>.</p>
-
-          <h3>Things that Matter</h3>
-
-          <p>For 5 years I supported people with developmental disabilities and mental illnesses. Service to others is not an alltruistic goal or ideal -- it's simply something I enjoy. I eventually felt there was more I could do, so I set out to become a doctor.</p>
-
-          <h3>Things that are Challenging</h3>
-
-          <p>I taught myself calculus after not using algebra or trigonometry for over 3 years. I took chemistry, physics, and biology for majors in one semester. I earned a score on the MCAT which is better than most doctors. It still didn't work out, and I moved on.</p>
-
-          <h3>Builds that Matter</h3>
-
-          <p>After college, I worked assessing noise and chemical exposures supported by software which could use UX redesign. I built a simple script to automate some data entry, and my coworkers were impressed and relieved. It had its own behavior, it mattered, but it wasn't all that challenging.</p>
-
-          <h3>Challenging Builds that Matter</h3>
-
-          <p>I built an Android app which enables on-the-go planning of air sampling. It works, it matters, and it was challenging, but getting the solution into users' hands involves much more than just writing the code.</p>
-
-          <h3>Build With Friends</h3>
-
-          <p>I want to see a product I helped build in users' hands. That goal is best achieved as part of a team. At Dev Bootcamp I've developed further technical skills, but more importantly I've practiced and refined my ability to communicate. I love the collaborative culture and practices at DBC.</p>
-
-          <h2>The Rest of the Story</h2>
-
-          <p>I'm looking for opportunities for further collaboration and continuous learning. I'd love to talk more! The world is filled with interesting projects. <a href="mailto:tylerhartland7@gmail.com" target="_top">Tell me about yours!</a></p>
-
-        </article>
-
-        <article class="markdown-body tab" id="resume">
+        <article class="markdown-body" id="resume">
 
           <h2>Resume</h2>
           <h3>Skills</h3>
@@ -133,7 +94,7 @@
           <h5>Web Development</h5>
           <p>2013 – 2013</p>
 
-          <p>Dev Bootcamp is an intensive program covering Ruby, SQL, ActiveRecord, HTML, CSS, Javascript, SInatra, and Rails. More importantly, Dev Bootcamp strongly emphasizes collaboration and feedback.</p>
+          <p>Dev Bootcamp is an intensive program covering Ruby, SQL, ActiveRecord, HTML, CSS, Javascript, Sinatra, and Rails. More importantly, Dev Bootcamp strongly emphasizes collaboration and feedback.</p>
 
           <h4>University of Minnesota</h4>
           <h5>Biology(B.S)</h5>
@@ -143,7 +104,7 @@
           <h5>EMT-B</h5>
           <p>2011 – 2011</p>
 
-          <a href="for_pdf.html">Save as PDF</a>
+          <a id="to_pdf" href="http://pdfcrowd.com/url_to_pdf/">Save as PDF</a>
         </article>
       </div>
     </div>
@@ -167,3 +128,8 @@
 
 </body>
 </html>
+<script>
+  $(document).ready(function() {
+    $('#to_pdf')[0].click();
+  });
+</script>
