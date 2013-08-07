@@ -1,6 +1,21 @@
 (function($) {
 $(document).ready(function(){
 
+  $('#about-me').show();
+
+  var tabs = function (e) {
+    e.preventDefault();
+      $(this).closest('ul').children().removeClass('active');
+      $(this).closest('li').addClass('active');
+
+      $('.tab').hide();
+      var tab = $(this).attr('href');
+      console.log(tab);
+      $(tab).show();
+  };
+
+  $('a.tag').on('click', tabs);
+
   // putting lines by the pre blocks
   $("pre").each(function(){
     var pre = $(this).text().split("\n");
@@ -39,7 +54,7 @@ $(document).ready(function(){
     $(".current-section").css({"opacity":1,"visibility":"visible"});
     for(var i in headings) {
       if(scrolltop >= headings[i].top) {
-        $(".current-section .name").text(headings[i].text);
+        $(".current-section .name").text($('.active').text());
       }
     }
   });
